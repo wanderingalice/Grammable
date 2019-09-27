@@ -65,6 +65,8 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+gem 'simple_form'
+
 gem 'popper_js'
 gem 'jquery-rails'
 gem 'bootstrap'
