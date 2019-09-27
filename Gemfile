@@ -66,6 +66,7 @@ group :development, :test do
 end
 
 gem 'simple_form'
+gem 'devise'
 
 gem 'popper_js'
 gem 'jquery-rails'
