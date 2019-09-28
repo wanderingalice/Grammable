@@ -64,6 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'rspec-rails'
   gem "factory_bot_rails"
+  gem 'simplecov'
 end
 
 gem 'simple_form'
