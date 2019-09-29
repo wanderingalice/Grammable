@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-29T01:42:03+00:00">2019-09-29T01:42:03+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-29T02:08:43+00:00">2019-09-29T02:08:43+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">99.42%</span></span>
+    (<span class="covered_percent"><span class="green">99.61%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.2
+         1.24
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>32</b> files in total.
-    <b>516</b> relevant lines. 
-    <span class="green"><b>513</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed </span>
+    <b>519</b> relevant lines. 
+    <span class="green"><b>517</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -103,9 +103,9 @@
       <tr>
         <td class="strong"><a href="#b28d7d9c23f645c3152a920d8f132a36a7cc279a" class="src_link" title="app/models/gram.rb">app/models/gram.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -122,12 +122,12 @@
       
       <tr>
         <td class="strong"><a href="#18e9b4346bff81a0af472b12edbc0a7d82b06a9f" class="src_link" title="app/uploaders/picture_uploader.rb">app/uploaders/picture_uploader.rb</a></td>
-        <td class="red strong">75.0 %</td>
+        <td class="green strong">100.0 %</td>
         <td>47</td>
         <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0.8</td>
+        <td>4</td>
+        <td>0</td>
+        <td>4.5</td>
       </tr>
       
       <tr>
@@ -313,7 +313,7 @@
       <tr>
         <td class="strong"><a href="#97908a0b5df1df22673de723bfdaa8a7ad89ad9b" class="src_link" title="spec/controllers/grams_controller_spec.rb">spec/controllers/grams_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>174</td>
+        <td>179</td>
         <td>115</td>
         <td>115</td>
         <td>0</td>
@@ -323,11 +323,11 @@
       <tr>
         <td class="strong"><a href="#0c7cd89b46b673187f0e62920e4e10174613b207" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>9</td>
-        <td>9</td>
+        <td>15</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>8.6</td>
+        <td>8.9</td>
       </tr>
       
       <tr>
@@ -362,10 +362,10 @@
       
       <tr>
         <td class="strong"><a href="#45bf371796d2bd460eea3533c94ba4cff515ad87" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
-        <td class="yellow strong">87.5 %</td>
-        <td>63</td>
-        <td>16</td>
-        <td>14</td>
+        <td class="yellow strong">88.24 %</td>
+        <td>64</td>
+        <td>17</td>
+        <td>15</td>
         <td>2</td>
         <td>0.9</td>
       </tr>
@@ -930,8 +930,8 @@
     <h3>app/models/gram.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -960,22 +960,28 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :user</code>
+          <code class="ruby">  validates :picture, presence: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  belongs_to :user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -1056,11 +1062,11 @@
         <div class="source_table" id="18e9b4346bff81a0af472b12edbc0a7d82b06a9f">
   <div class="header">
     <h3>app/uploaders/picture_uploader.rb</h3>
-    <h4><span class="red">75.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>4</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1139,8 +1145,8 @@
           <code class="ruby">  def store_dir</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="15" data-linenumber="13">
+          <span class="hits">15</span>
           
           <code class="ruby">    &quot;uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}&quot;</code>
         </li>
@@ -9273,43 +9279,43 @@
         <li class="covered" data-hits="1" data-linenumber="155">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create, params: { gram: { message: &#39;Hello!&#39; } }</code>
+          <code class="ruby">      post :create, params: {</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="156">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="156">
           
-          <code class="ruby">      expect(response).to redirect_to root_path</code>
+          
+          <code class="ruby">        gram: {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="157">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">          message: &#39;Hello!&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="158">
+        <li class="never" data-hits="" data-linenumber="158">
+          
+          
+          <code class="ruby">          picture: fixture_file_upload(&quot;/picture.jpg&quot;, &#39;image/jpg&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby">        }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="160">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="161">
           <span class="hits">1</span>
           
-          <code class="ruby">      gram = Gram.last</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="159">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(gram.message).to eq(&quot;Hello!&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="160">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(gram.user).to eq(user)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="161">
-          
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect(response).to redirect_to root_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="162">
@@ -9321,49 +9327,49 @@
         <li class="covered" data-hits="1" data-linenumber="163">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;should properly deal with validation errors&quot; do</code>
+          <code class="ruby">      gram = Gram.last</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="164">
           <span class="hits">1</span>
           
-          <code class="ruby">      user = FactoryBot.create(:user)</code>
+          <code class="ruby">      expect(gram.message).to eq(&quot;Hello!&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="165">
           <span class="hits">1</span>
           
-          <code class="ruby">      sign_in user</code>
+          <code class="ruby">      expect(gram.user).to eq(user)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="166">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="167">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="167">
           
-          <code class="ruby">      post :create, params: { gram: { message: &#39;&#39;} }</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="168">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to have_http_status(:unprocessable_entity)</code>
+          <code class="ruby">    it &quot;should properly deal with validation errors&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="169">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(Gram.count).to eq 0</code>
+          <code class="ruby">      user = FactoryBot.create(:user)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="170">
+        <li class="covered" data-hits="1" data-linenumber="170">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      sign_in user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="171">
@@ -9372,19 +9378,49 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="172">
+        <li class="covered" data-hits="1" data-linenumber="172">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">      post :create, params: { gram: { message: &#39;&#39;} }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="173">
+        <li class="covered" data-hits="1" data-linenumber="173">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(:unprocessable_entity)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="174">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(Gram.count).to eq 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="176">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="174">
+        <li class="never" data-hits="" data-linenumber="177">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
           
           
           <code class="ruby">end</code>
@@ -9400,8 +9436,8 @@
     <h3>spec/factories.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -9475,19 +9511,25 @@
           <code class="ruby">    message { &quot;hello&quot; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="12" data-linenumber="12">
+          <span class="hits">12</span>
+          
+          <code class="ruby">    picture { fixture_file_upload(Rails.root.join(&#39;spec&#39;, &#39;fixtures&#39;, &#39;picture.jpg&#39;).to_s, &#39;image/jpg&#39;) }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">    association :user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -9708,10 +9750,10 @@
         <div class="source_table" id="45bf371796d2bd460eea3533c94ba4cff515ad87">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
-    <h4><span class="yellow">87.5 %</span> covered</h4>
+    <h4><span class="yellow">88.24 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
@@ -9938,160 +9980,166 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">  config.include Devise::Test::ControllerHelpers, type: :view</code>
+          <code class="ruby">  include ActionDispatch::TestProcess</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  config.include Devise::Test::ControllerHelpers, type: :view</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
+          <code class="ruby">  # If you&#39;re not using ActiveRecord, or you&#39;d prefer not to run each of your</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
+          <code class="ruby">  # examples within a transaction, remove the following line or assign false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
           <code class="ruby">  # instead of true.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">  config.use_transactional_fixtures = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
+          <code class="ruby">  # RSpec Rails can automatically mix in different behaviours to your tests</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
+          <code class="ruby">  # based on their file location, for example enabling you to call `get` and</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # `post` in specs under `spec/controllers`.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
+          <code class="ruby">  # You can disable this behaviour by removing the line below, and instead</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # explicitly tag your specs with their type, e.g.:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">  #     RSpec.describe UsersController, :type =&gt; :controller do</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">  #       # ...</code>
+          <code class="ruby">  #     RSpec.describe UsersController, :type =&gt; :controller do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">  #     end</code>
+          <code class="ruby">  #       # ...</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  #     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">  # The different available types are documented in the features, such as in</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
+          <code class="ruby">  # The different available types are documented in the features, such as in</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
           <code class="ruby">  # https://relishapp.com/rspec/rspec-rails/docs</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">  config.infer_spec_type_from_file_location!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">  # Filter lines from Rails gems in backtraces.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
           <code class="ruby">  config.filter_rails_from_backtrace!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby">  # arbitrary gems may also be filtered via:</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">  # config.filter_gems_from_backtrace(&quot;gem name&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">end</code>
