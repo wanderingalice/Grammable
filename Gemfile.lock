@@ -318,7 +318,7 @@ DEPENDENCIES
   bootstrap
   byebug
   capybara
-  carrierwave (~> 2.0)
+  carrierwave
   carrierwave-aws
   coffee-rails (~> 4.2)
   devise
